@@ -1,6 +1,6 @@
-o# Repositórios para desenvolvimento de estudo dirigido - Programação
+# Repositórios para desenvolvimento de estudo dirigido - Programação
 
-- [ ] Exercício 1
+- [X] Exercício 1
 - [ ] Exercício 2
 - [ ] Exercício 3
 - [ ] Exercício 4
@@ -9,4 +9,6 @@ o# Repositórios para desenvolvimento de estudo dirigido - Programação
 - [ ] Exercício 7
 - [ ] Exercício 8
 - [ ] Exercício 9
-- [ ] Exercício 1
+    - [ ] A
+    - [ ] B
+    - [ ] C
