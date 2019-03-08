@@ -1,6 +1,5 @@
 <?php
 
-
 print "Valor em metros: \n";
 
 $valordosmetros = (float)fgets (STDIN);
