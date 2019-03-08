@@ -1,1 +1,3 @@
-# estudo_dirgido1
+o# Repositórios para desenvolvimento de estudo dirigido - Programação
+
+-[ ] Exercício 1
