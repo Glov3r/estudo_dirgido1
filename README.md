@@ -8,7 +8,7 @@
 - [X] Exercício 6
 - [X] Exercício 7
 - [X] Exercício 8
-- [ ] Exercício 9
-    - [ ] A
-    - [ ] B
-    - [ ] C
+- [X] Exercício 9
+    - [X] A
+    - [X] B
+    - [X] C
