@@ -1,43 +1,52 @@
-
 <?php
-/*1 litro para cada 6m²;
-  1 lata custa 80 reais com 18 litros;
-  1 galão custa 25 reais com 3,6 litros;*/
-  
-print "Tamanho em m² a ser pintado: ";
 
-$tamanhom2pintar = (float) fgets(STDIN);
+print "Tamanho da área a ser pintada(m²): ";
+$Area_a_ser_pintada = fgets(STDIN);
 
-print "\nDeseja usar: 1 - Lata de 18 litros = custam 85 reais\n             2 - Galão de 3,6 litros = custam 25 reais\n             3 - Misturar galões e latas\n    Selecione 1,2 ou 3: ";
+//18L = 108m²
+//3,6L = 21,6m²
 
-$lataougalao= (float) fgets(STDIN);
+//Folga
 
-if ($lataougalao == 1) 
+    $Area_com_folga = $Area_a_ser_pintada+(($Area_a_ser_pintada*10)/100);
 
-    {$quantidadelitros= $tamanhom2pintar/6;
-    
-     $quantidadelitros= ceil ($quantidadelitros);
-     
-     $quantidadelatas= $quantidadelitros/18;
-     
-     $quantidadelatas= ceil ($quantidadelatas);
-     
-     $precolatas= $quantidadelatas*85;
-     
-     print "\nO preço vai ser: $precolatas reais\nVocê vai comprar $quantidadelatas latas";}
-     
-if ($lataougalao == 2)
+//Apenas latas de 18L
 
-{$quantidadelitros= $tamanhom2pintar/6;
+    $Quantidade_lata = ceil($Area_com_folga/108);
+    $Preco_lata = $Quantidade_lata*80;
 
-    $quantidadelitros= ceil ($quantidadelitros);
-    
-    $quantidadegaloes= $quantidadelitros/3.6;
-    
-    $quantidadegaloes= ceil ($quantidadegaloes);
-    
-    $precogaloes= $quantidadegaloes*25;
-    
-    print "\nO preço vai ser: $precogaloes reais\nVocê vai comprar $quantidadegaloes galões";}
-if ($lataougalao == 3)
-{}}
+print "Você precisará de $Quantidade_lata lata(s) de 18L. \n";
+print "Comprar as latas custará um total de " .'R$' ."$Preco_lata. \n";
+print "\n";
+print "ou \n";
+print "\n";
+
+//Apenas galões de 3,6L
+
+    $Quantidade_galao = ceil($Area_com_folga/21.6);
+    $Preco_galao = $Quantidade_galao*25;
+
+print "Você precisará de $Quantidade_galao galão(ões) de 3,6L. \n";
+print "Comprar os galões custará um total de " .'R$' ."$Preco_galao. \n";
+print "\n";
+print "ou \n";
+print "\n";
+
+//Latas de 18L e galões de 3,6L misturados
+
+    $Quantidade_galao2 = $Quantidade_galao;
+    $Quantidade_lata2 = 0;
+
+//1 lata = 5 galões
+
+if ($Quantidade_galao2 >= 5) {
+
+    $Quantidade_lata2 = ceil($Quantidade_galao2/5);
+    $Quantidade_galao2 = ceil($Quantidade_galao2%5);
+
+}
+
+    $Total_a_pagar = ($Quantidade_galao2*25)+($Quantidade_lata2*80);
+
+print "Você precisará de $Quantidade_galao2 galão(ões) e $Quantidade_lata2 lata(s) de tinta. \n";
+print "O total a pagar será de " .'R$' ."$Total_a_pagar";
