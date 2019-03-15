@@ -1,14 +1,14 @@
 <?php
 
 print "Tamanho da área a ser pintada(m²): ";
-$Area_a_ser_pintada = fgets(STDIN);
+$Area_a_pintar = fgets(STDIN);
 
 //18L = 108m²
 //3,6L = 21,6m²
 
 //Folga
 
-    $Area_com_folga = $Area_a_ser_pintada+(($Area_a_ser_pintada*10)/100);
+    $Area_com_folga = $Area_a_pintar+(($Area_a_pintar*10)/100);
 
 //Apenas latas de 18L
 
