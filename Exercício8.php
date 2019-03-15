@@ -2,16 +2,16 @@
 
 print "Quantidade de cigarros fumados por dia: ";
 
-$cigarrosfumados = (int) fgets(STDIN);
+$cigarros_fumados = (int) fgets(STDIN);
 
 print "Anos que você fumou: ";
 
-$anosfumando = (int) fgets(STDIN);
+$anos_fumando = (int) fgets(STDIN);
 
-$minutosvidaperdidos= ($cigarrosfumados+($anosfumando*365))*10;
+$minutos_vida_perdidos= ($cigarros_fumados+($anos_fumando*365))*10;
 
-$diasvidaperdidos= $minutosvidaperdidos/1440; /*1440 são quantos minutos há em um dia*/
+$dias_vida_perdidos= $minutosvidaperdidos/1440; /*1440 são quantos minutos há em um dia*/
 
-$diasvidaperdidos= round($diasvidaperdidos);
+$dias_vida_perdidos= round($dias_vida_perdidos);
 
 print "\nA quantidade de minutos perdidos de vida é de: $minutosvidaperdidos minutos\nA quantidade de dias perdidos de vida é de: $diasvidaperdidos dias";
