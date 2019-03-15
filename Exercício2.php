@@ -3,24 +3,24 @@
 
 print "Quantidade de dias: ";
 
-$diasquantidade = (int) fgets(STDIN);
+$dias_quantidade = (int) fgets(STDIN);
 
 print "Quantidade de horas: ";
 
-$horasquantidade = (int) fgets(STDIN);
+$horas_quantidade = (int) fgets(STDIN);
 
 print "Quantidade de minutos: ";
 
-$minutosquantidade = (int) fgets(STDIN);
+$minutos_quantidade = (int) fgets(STDIN);
 
 print "Quantidade de segundos: ";
 
-$segundosquantidade = (float) fgets(STDIN);
+$segundos_quantidade = (float) fgets(STDIN);
 
-$diasparasegundos = $diasquantidade*24*60*60;
+$dias_para_segundos = $dias_quantidade*24*60*60;
 
-$horasparasegundos = $horasquantidade*60*60;
+$horas_para_segundos = $horas_quantidade*60*60;
 
-$minutosparasegundos = $minutosquantidade*60;
+$minutos_para_segundos = $minutos_quantidade*60;
 
-  $segundostotais = $diasparasegundos+$horasparasegundos+$minutosparasegundos+$segundosquantidade;
+  $segundos_totais = $dias_para_segundos+$horas_para_segundos+$minutos_para_segundos+$segundos_quantidade;
