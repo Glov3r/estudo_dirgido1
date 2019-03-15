@@ -2,15 +2,15 @@
 
 print "Preço incial da marcedoria: ";
 
-$precoinicial = (float) fgets(STDIN);
+$preco_inicial = (float) fgets(STDIN);
 
 print "Porcentagem de desconto: ";
-$porcentagemdedesconto = (float) fgets(STDIN);
+$porcentagem_de_desconto = (float) fgets(STDIN);
 
-$desconto= $porcentagemdedesconto/100;
+$desconto= $porcentagem_de_desconto/100;
 
-$descontoreal= $desconto*$precoinicial;
+$desconto_real= $desconto*$preco_inicial;
 
-$precofinal= $precoinicial-$descontoreal;
+$preco_final= $preco_inicial-$desconto_real;
 
-print "\nO desconto foi de: $descontoreal reais\nO preço final é de: $precofinal reais";
+print "\nO desconto foi de: $desconto_real reais\nO preço final é de: $preco_final reais";
