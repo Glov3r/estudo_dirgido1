@@ -2,16 +2,16 @@
 
 print "Salário incial: ";
 
-$salarionicial = (float) fgets(STDIN);
+$salario_inicial = (float) fgets(STDIN);
 
 print "Porcentagem de aumento: ";
 
-$porcentagemaumento = (float) fgets(STDIN);
+$porcentagem_aumento = (float) fgets(STDIN);
 
-$porcentagemreal= $porcentagemaumento/100;
+$porcentagem_real= $porcentagem_aumento/100;
 
-$aumentosalarial= $salarionicial*$porcentagemreal;
+$aumento_salarial= $salario_inicial*$porcentagem_real;
 
-$salariofinal= $salarionicial+$aumentosalarial;
+$salario_final= $salario_inicial+$aumento_salarial;
 
-print "\nO aumento foi de: $aumentosalario reais\nO salário final foi: $salariofinal reais";
+print "\nO aumento foi de: $aumento_salario reais\nO salário final foi: $salario_final reais";
