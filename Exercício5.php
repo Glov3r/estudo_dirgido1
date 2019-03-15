@@ -6,8 +6,8 @@ $distancia = (float) fgets(STDIN);
 
 print "Velocidade média esperada(Km/h): ";
 
-$velocidademedia = (float) fgets(STDIN);
+$velocidade_media = (float) fgets(STDIN);
 
-$tempodeviagem= $distancia/$velocidademedia;
+$tempo_de_viagem= $distancia/$velocidade_media;
 
-print "Tempo de viagem estimado: $tempodeviagem horas";
+print "Tempo de viagem estimado: $tempo_de_viagem horas";
