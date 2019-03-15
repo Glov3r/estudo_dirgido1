@@ -2,8 +2,8 @@
 
 print "Valor em metros: \n";
 
-$valordosmetros = (float)fgets (STDIN);
+$valor_dos_metros = (float)fgets (STDIN);
 
-$valoremmilimetros= $valoremmetros*1000;
+$valor_em_milimetros= $valor_em_metros*1000;
 
-print "\nO valor em mm é: $valoremmilimetros mm"
+print "\nO valor em mm é: $valor_em_milimetros mm"
