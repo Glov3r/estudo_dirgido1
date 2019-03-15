@@ -1,16 +1,16 @@
 <?php
 print "Quantidade de Km percorridos: ";
 
-$kmpercorridos = (float) fgets(STDIN);
+$km_percorridos = (float) fgets(STDIN);
 
 print "Quantidade de dias que o carro foi alugado: ";
 
-$diascarroalugados = (float) fgets(STDIN);
+$dias_carro_alugados = (float) fgets(STDIN);
 
-$aluguelpordia= $diascarroalugados*60;
+$aluguel_por_dia= $dias_carro_alugados*60;
 
-$aluguelporkm= $kmpercorridos*0.15;
+$aluguel_por_km= $km_percorridos*0.15;
 
-$precototal= $aluguelpordia+$aluguelporkm;
+$preco_total= $aluguel_por_dia+$aluguel_por_km;
 
 print "\nO Preço total a pagar por km: $aluguelporkm reais\nO Preço total a pagar por dia: $aluguelpordia reais\nO Preço total a pagar: $precototal reais";
