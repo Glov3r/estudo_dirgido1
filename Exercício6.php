@@ -2,8 +2,8 @@
 
 print "Temperatura em ºC: ";
 
-$temperaturaemC = (float) fgets(STDIN);
+$temperatura_em_C = (float) fgets(STDIN);
 
-$temperaturaemF= 9*$temperaturaemC/5+32;
+$temperatura_em_F= 9*$temperatura_em_C/5+32;
 
-print "$temperaturaC ºC em Fahrenheit, são: $temperaturaemF ºF";
+print "$temperatura_C ºC em Fahrenheit, são: $temperatura_em_F ºF";
